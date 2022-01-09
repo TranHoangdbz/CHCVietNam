@@ -1,3 +1,4 @@
+import 'package:chc/src/Pages/DocsPage.dart';
 import 'package:chc/src/components/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,9 @@ class TopBar extends StatelessWidget{
       children: [
         Expanded(child: SearchBar()),
         SizedBox(width: 10),
-        Icon(Icons.menu, size: 30)
+        IconButton(onPressed: (){
+
+          }, icon: Icon(Icons.menu))
       ],
     );
   }

@@ -34,7 +34,7 @@ class _CategorySelectorState extends State<CategorySelector>{
                       borderRadius: BorderRadius.circular(10),
                       color: isSelected ? Colors.black : Colors.white),
                   padding: EdgeInsets.symmetric(vertical: 5, horizontal: 25),
-                  margin: EdgeInsets.symmetric(horizontal: 2),
+                  margin: EdgeInsets.symmetric(horizontal: 5),
                   child: Text(
                     category.name,
                     style: TextStyle(

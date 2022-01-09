@@ -1,12 +1,14 @@
+
+import 'package:chc/src/widgets/splash.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import 'package:chc/src/Pages/home_page.dart';
-import 'package:flutter/material.dart';
-
-main(List<String> args) {
+main(List<String> args) async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Hello",
-    home: HomePage(),
+    home: SplashScreen(),
   ));
 }
